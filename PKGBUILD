@@ -94,7 +94,7 @@ pkgdesc="${_pkgdesc[*]}"
 _commit="a3625cb4181c4bcdf09884e677d4320c641b8724"
 _pkgver="3.0.0"
 pkgver="${_pkgver}"
-pkgrel=8
+pkgrel=9
 arch=(
   'any'
 )
