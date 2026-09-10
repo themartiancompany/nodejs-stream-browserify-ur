@@ -133,6 +133,7 @@ _bundle_sum="nope"
 _bundle_sig_sum="nope"
 _npm_sum="376fa4c0ffd38961cf23c210f8a8dbcc46b00862c1d1bce1bbc66f7ea9a433cf"
 _npm_sig_sum="105901f24f74f0d3720081269064cb8d01bbba14320e814cce6038cbd56adaa4"
+
 # Truocolo
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 # Dvorak
@@ -181,6 +182,7 @@ if [[ "${_evmfs}" == "true" ]]; then
 elif [[ "${_evmfs}" == "false" ]]; then
   if [[ "${_npm}" == "true" ]]; then
     _uri="${_npm_http}/${_pkg}/-/${_tarfile}"
+    _sum="${_npm_sum}"
   elif [[ "${_npm}" == "false" ]]; then
     if [[ "${_tag_name}" == 'pkgver' ]]; then
       if [[ "${_git_http}" == "gitlab" ]]; then
@@ -292,3 +294,4 @@ package_nodejs-stream-browserify() {
 }
 
 # vim:set sw=2 sts=-1 et:
+105901f24f74f0d3720081269064cb8d01bbba14320e814cce6038cbd56adaa4  stream-browserify-3.0.0.tgz.sig
