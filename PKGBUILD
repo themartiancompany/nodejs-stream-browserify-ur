@@ -62,7 +62,7 @@ if [[ "${_os}" == "Android" ]]; then
   _node="nodejs-lts"
 fi
 if [[ ! -v "_npm" ]]; then
-  _npm="false"
+  _npm="true"
 fi
 if [[ ! -v "_git" ]]; then
   _git="false"
@@ -253,12 +253,12 @@ build() {
     npm \
       pack
     mv \
-      "${_ns}-${_pkg}-${_pkgver}.tgz" \
+      "${_pkg}-${_pkgver}.tgz" \
       "${srcdir}"
   fi
 }
 
-package_nodejs-opfs() {
+package_nodejs-process-browserify() {
   local \
     _npm_options=() \
     _find_opts=()
@@ -281,7 +281,7 @@ package_nodejs-opfs() {
   npm \
     install \
     "${_npm_options[@]}" \
-    "${srcdir}/${_ns}-${_pkg}-${_pkgver}.tgz"
+    "${srcdir}/${_pkg}-${_pkgver}.tgz"
   rm \
     -fr \
       "${pkgdir}/usr/etc"
