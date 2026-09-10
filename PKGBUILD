@@ -94,7 +94,7 @@ pkgdesc="${_pkgdesc[*]}"
 _commit="a3625cb4181c4bcdf09884e677d4320c641b8724"
 _pkgver="3.0.0"
 pkgver="${_pkgver}"
-pkgrel=7
+pkgrel=8
 arch=(
   'any'
 )
@@ -124,7 +124,7 @@ elif [[ "${_npm}" == "false" ]]; then
   _tag_name="commit"
 fi
 _tarname="${_pkg}-${_tag}"
-_npm_tarname="${_ns}-${_pkg}-${_tag}"
+_npm_tarname="${_pkg}-${_tag}"
 _tarfile="${_tarname}.${_archive_format}"
 _npm_tarfile="${_npm_tarname}.${_archive_format}"
 _sum="c34bc49cff7d579e7cd7d4137fbb0cb56fc262afa6055a979ff023cf6917669c"
@@ -282,7 +282,7 @@ package_nodejs-stream-browserify() {
   npm \
     install \
     "${_npm_options[@]}" \
-    "${srcdir}/${_pkg}-${_pkgver}.tgz"
+    "${srcdir}/${_tarfile}"
   rm \
     -fr \
       "${pkgdir}/usr/etc"
