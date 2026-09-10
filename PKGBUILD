@@ -94,7 +94,7 @@ pkgdesc="${_pkgdesc[*]}"
 _commit="a3625cb4181c4bcdf09884e677d4320c641b8724"
 _pkgver="3.0.0"
 pkgver="${_pkgver}"
-pkgrel=3
+pkgrel=5
 arch=(
   'any'
 )
@@ -158,7 +158,7 @@ sha256sums=()
 if [[ "${_evmfs}" == "true" ]]; then
   if [[ "${_npm}" == "true" ]]; then
     _uri="${_evmfs_npm_uri}"
-    _sum="${_evmfs_npm_sum}"
+    _sum="${_npm_sum}"
     _sig_src="${_evmfs_npm_uri}"
     _sig_sum="${_npm_sig_sum}"
   elif [[ "${_npm}" == "false" ]]; then
