@@ -94,7 +94,7 @@ pkgdesc="${_pkgdesc[*]}"
 _commit="a3625cb4181c4bcdf09884e677d4320c641b8724"
 _pkgver="3.0.0"
 pkgver="${_pkgver}"
-pkgrel=6
+pkgrel=7
 arch=(
   'any'
 )
@@ -133,7 +133,6 @@ _bundle_sum="nope"
 _bundle_sig_sum="nope"
 _npm_sum="376fa4c0ffd38961cf23c210f8a8dbcc46b00862c1d1bce1bbc66f7ea9a433cf"
 _npm_sig_sum="105901f24f74f0d3720081269064cb8d01bbba14320e814cce6038cbd56adaa4"
-
 # Truocolo
 _evmfs_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 # Dvorak
@@ -294,4 +293,3 @@ package_nodejs-stream-browserify() {
 }
 
 # vim:set sw=2 sts=-1 et:
-105901f24f74f0d3720081269064cb8d01bbba14320e814cce6038cbd56adaa4  stream-browserify-3.0.0.tgz.sig
