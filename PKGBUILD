@@ -94,7 +94,7 @@ pkgdesc="${_pkgdesc[*]}"
 _commit="a3625cb4181c4bcdf09884e677d4320c641b8724"
 _pkgver="3.0.0"
 pkgver="${_pkgver}"
-pkgrel=5
+pkgrel=6
 arch=(
   'any'
 )
@@ -258,7 +258,7 @@ build() {
   fi
 }
 
-package_nodejs-process-browserify() {
+package_nodejs-stream-browserify() {
   local \
     _npm_options=() \
     _find_opts=()
